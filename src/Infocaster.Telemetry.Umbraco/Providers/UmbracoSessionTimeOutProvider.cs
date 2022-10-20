@@ -1,0 +1,20 @@
+﻿using System.Collections.Generic;
+using Umbraco.Core.Configuration;
+
+namespace Infocaster.Telemetry.Umbraco.Providers
+{
+    public class UmbracoSessionTimeOutProvider : ITelemetryProvider
+    {
+        private readonly IGlobalSettings _globalSettings;
+
+        public UmbracoSessionTimeOutProvider(IGlobalSettings globalSettings)
+        {
+            _globalSettings = globalSettings;
+        }
+
+        public IEnumerable<IAppTelemetry> GetTelemetry()
+        {
+            yield return new AppTelemetry<int>("Umbraco.SessionTimeOutInMinutes", _globalSettings.TimeOutInMinutes);
+        }
+    }
+}
