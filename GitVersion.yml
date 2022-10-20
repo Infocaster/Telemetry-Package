@@ -1,0 +1,24 @@
+mode: ContinuousDeployment
+next-version: 1.0.0
+branches:
+  feature:
+    tag: alpha
+    regex: ^v10/feature/
+    source-branches: ['develop']
+    is-mainline: false
+  develop:
+    tag: beta
+    regex: ^v10/develop$
+    source-branches: []
+    is-mainline: false
+  master:
+    tag: ''
+    regex: ^v10/main$
+    is-mainline: true
+  hotfix:
+    tag: 'beta'
+    regex: ^v10/hotfix
+    source-branches: ['master']
+    is-mainline: false
+ignore:
+  sha: []
