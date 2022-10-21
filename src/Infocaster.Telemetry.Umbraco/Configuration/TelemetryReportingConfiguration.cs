@@ -55,7 +55,7 @@ namespace Infocaster.Telemetry.Umbraco.Configuration
         /// <summary>
         /// Guid that uniquely identifies the application.
         /// </summary>
-        public Guid AppId { get; set; }
+        public Guid? AppId { get; set; } = Guid.Empty;
 
         /// <summary>
         /// Preferred display name of the application in telemetry reports.
