@@ -65,7 +65,7 @@
 		<Compile Include="Providers\TargetFrameworkProvider.cs" />
 		<Compile Include="Providers\UmbracoSessionTimeOutProvider.cs" />
 		<Compile Include="Providers\UmbracoUseHttpsProvider.cs" />
-		<Compile Include="Reporters\ITelemetryReporter.cs" />
+		<Compile Include="ITelemetryReporter.cs" />
 		<Compile Include="Reporters\TelemetryReporter.cs" />
 		<Compile Include="Reporting\TelemetryReportingComponent.cs" />
 		<Compile Include="Reporting\TelemetryReportingTask.cs" />
