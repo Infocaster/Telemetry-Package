@@ -12,7 +12,7 @@ Infocaster.Telemetry.Umbraco
 
 *Awesome telemetry package for Umbraco by Infocaster. Do you want to keep track of your Umbraco websites? Then this package may be for you!*
 
-This package makes keeping track of your Umbraco websites easier! When installed your websites will periodically send telemetry reports to a centralized and external web API. The reports include data about your Umbraco website like which versions of Umbraco and Examine are installed, how many log messages were created, when your content was last updated and much, much more!
+This package makes keeping track of your Umbraco websites easier! When installed your websites will periodically send telemetry reports to a centralized and external web API. The reports include data about your Umbraco website like which versions of Umbraco and Examine are installed, when your content was last updated and much, much more!
 Centralizing your data allows you to easily spot which websites require attention and removes the need to check in on your websites manually.
 
 The data is sent to an API of your choosing. This ensures that you maintain full control over your data and that your data is never shared with other parties. See the section about requirements for more information about the API.
