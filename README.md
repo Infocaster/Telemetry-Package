@@ -158,6 +158,20 @@ public class MyTelemetryProvider : ITelemetryProvider
 }
 ```
 
+There is no full support for dependency injection, but injecting umbraco context into your telemetry provider is supported:
+
+```csharp
+public class MyTelemetryProvider : ITelemetryProvider
+{
+    private readonly UmbracoContext _umbracoContext;
+
+    public MyTelemetryProvider(UmbracoContext umbracoContext)
+    {
+        _umbracoContext = umbracoContext;
+    }
+}
+```
+
 You can override ApplicationEventHandler.ApplicationStarting to remove the default telemetry providers:
 
 ```csharp
@@ -178,6 +192,20 @@ public class MyTelemetryReporter : ITelemetryReporter
     public Task ReportTelemetry(AppTelemetryReport report, CancellationToken token)
     {
         // Send the report via HTTP request or SMTP or whichever way that suits your needs!
+    }
+}
+```
+
+There is no full support for dependency injection, but injecting umbraco context into your telemetry reporter is supported:
+
+```csharp
+public class MyTelemetryReporter : ITelemetryReporter
+{
+    private readonly UmbracoContext _umbracoContext;
+
+    public MyTelemetryReporter(UmbracoContext umbracoContext)
+    {
+        _umbracoContext = umbracoContext;
     }
 }
 ```
