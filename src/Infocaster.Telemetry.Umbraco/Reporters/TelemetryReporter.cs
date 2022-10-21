@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infocaster.Telemetry.Umbraco.Reporting
+namespace Infocaster.Telemetry.Umbraco.Reporters
 {
     /// <summary>
     /// Default telemetry reporter. Reports telemetry by posting telemetry reports as json to an api endpoint.
@@ -63,7 +63,7 @@ namespace Infocaster.Telemetry.Umbraco.Reporting
                 return;
             }
 
-            HttpResponseMessage response = null;
+            HttpResponseMessage? response = null;
 
             try
             {
