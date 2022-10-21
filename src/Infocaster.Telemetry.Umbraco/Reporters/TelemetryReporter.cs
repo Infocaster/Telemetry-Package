@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Umbraco.Core;
 using Umbraco.Core.Logging;
 
-namespace Infocaster.Telemetry.Umbraco.Reporting
+namespace Infocaster.Telemetry.Umbraco.Reporters
 {
     /// <summary>
     /// Default telemetry reporter. Reports telemetry by posting telemetry reports as json to an api endpoint.

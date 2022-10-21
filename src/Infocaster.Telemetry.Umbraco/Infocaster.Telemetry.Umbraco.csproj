@@ -71,7 +71,7 @@
 		<Compile Include="Providers\UmbracoUserLastLoginDateProvider.cs" />
 		<Compile Include="Providers\UmbracoVersionCheckPeriodProvider.cs" />
 		<Compile Include="Providers\UmbracoVersionProvider.cs" />
-		<Compile Include="Reporters\ITelemetryReporter.cs" />
+		<Compile Include="ITelemetryReporter.cs" />
 		<Compile Include="Reporters\TelemetryReporter.cs" />
 		<Compile Include="Reporting\TelemetryReportingScheduler.cs" />
 		<Compile Include="Reporting\TelemetryReportingTask.cs" />
