@@ -27,7 +27,7 @@ namespace Infocaster.Telemetry.Umbraco.Reporting
 
         public virtual AppTelemetryReport GetReport()
         {
-            var appId = _telemetryReportingConfiguration.AppId;
+            var appId = _telemetryReportingConfiguration.AppId.GetValueOrDefault();
             var appName = _telemetryReportingConfiguration.AppName;
             var report = new AppTelemetryReport(appId, appName);
             foreach (var provider in _telemetryProviders)
