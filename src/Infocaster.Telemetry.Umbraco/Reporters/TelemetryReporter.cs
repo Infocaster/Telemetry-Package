@@ -34,7 +34,7 @@ namespace Infocaster.Telemetry.Umbraco.Reporters
         public virtual HttpRequestMessage CreateHttpRequestMessage(AppTelemetryReport report)
         {
             var json = JsonConvert.SerializeObject(report);
-            var uri = new Uri(_configuration.ApiEndpoint);
+            var uri = new Uri(_configuration.ApiEndpoint!);
             var request = new HttpRequestMessage(HttpMethod.Post, uri);
             request.Content = new StringContent(json, Encoding.UTF8, "application/json");
             SetRequestAuthHeader(request);
