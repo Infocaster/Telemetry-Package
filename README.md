@@ -104,10 +104,12 @@ The JSON structure below is an example of the data that is included in telemetry
 ```
 
 ## Requirements
-The package requires a web API to send telemetry to and a database to store telemetry in. The API and the database will need to be hosted and maintained by you. Feel free to use our source code for your API. The source code is available at https://github.com/Infocaster/Telemetry-Backend. The source code includes a Blazor app to visualize your data too!
+The package requires a web API to send telemetry to and a database to store telemetry in. The API and the database will need to be hosted and maintained by you. Feel free to use our example source code for your API. The source code is available at https://github.com/Infocaster/Telemetry-Backend. The source code includes a Blazor app to visualize your data too!
 
 ## Installation
-Install the Infocaster.Telemetry.Umbraco package in your website. The package is available via NuGet. Visit [the package on NuGet](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/) for more information about installing the package using NuGet.
+Make sure your web API is up and running first. See our example API source code at https://github.com/Infocaster/Telemetry-Backend for more information.
+
+Then install the Infocaster.Telemetry.Umbraco package in your website. The package is available via NuGet. Visit [the package on NuGet](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/) for more information about installing the package using NuGet.
 
 Umbraco version 7.6 and later are supported. Make sure to install the right package version for your website. See the table below for which package version is compatible with your website.
 
