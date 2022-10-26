@@ -32,11 +32,11 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Examine.ExternalIndexItemCount",
-            "Value": 258,
+            "Value": 8592,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.Examine.InternalIndexItemCount",
-            "Value": 274,
+            "Value": 9493,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.Examine.MembersIndexItemCount",
@@ -47,32 +47,44 @@ The JSON structure below is an example of the data that is included in telemetry
             "Value": ".NETFramework,Version=v4.5",
             "Type": "System.String"
         }, {
+            "Name": "Umbraco.Examine.LuceneDirectoryFactory",
+            "Value": "Examine.LuceneEngine.Directories.SyncTempEnvDirectoryFactory, Examine",
+            "Type": "System.String"
+        }, {
+            "Name": "Umbraco.Examine.ExamineVersion",
+            "Value": "0.1.90.0",
+            "Type": "System.String"
+        }, {
             "Name": "Umbraco.ApplicationUrl",
-            "Value": "http://localhost/umbraco",
+            "Value": "https://myawesomeumbracowebsite.com/umbraco",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.ApplicationUrlSetting",
-            "Value": "",
+            "Value": "https://myawesomeumbracowebsite.com/umbraco",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Content.LastUpdatedDate",
-            "Value": "2022-10-17T16:33:01Z",
+            "Value": "2022-10-17T18:46:19.4817556Z",
             "Type": "System.DateTime"
         }, {
             "Name": "Umbraco.DebugMode",
-            "Value": true,
+            "Value": false,
             "Type": "System.Boolean"
         }, {
             "Name": "Umbraco.Domains.en-US",
             "Value": "myawesomeumbracowebsite.com",
             "Type": "System.String"
         }, {
+            "Name": "Umbraco.Domains.nl-NL",
+            "Value": "myawesomeumbracowebsite.nl",
+            "Type": "System.String"
+        }, {
             "Name": "Umbraco.Domains.Count",
-            "Value": 1,
+            "Value": 2,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.LocalTempStorageLocation",
-            "Value": "Default",
+            "Value": "EnvironmentTemp",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Logs.LogLevel",
@@ -88,7 +100,11 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.Boolean"
         }, {
             "Name": "Umbraco.Users.LastLoginDate.Administrators",
-            "Value": "2022-10-19T09:51:33.373Z",
+            "Value": "2022-10-19T06:27:39.4534862Z",
+            "Type": "System.DateTime"
+        }, {
+            "Name": "Umbraco.Users.LastLoginDate.Sensitive data",
+            "Value": "2022-10-19T06:27:39.4534862Z",
             "Type": "System.DateTime"
         }, {
             "Name": "Umbraco.VersionCheckPeriod",
