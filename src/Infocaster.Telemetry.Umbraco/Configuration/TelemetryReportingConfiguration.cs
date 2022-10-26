@@ -25,17 +25,17 @@ namespace Infocaster.Telemetry.Umbraco.Configuration
         /// <summary>
         /// Api endpoint url to send telemetry reports to.
         /// </summary>
-        public string ApiEndpoint { get; set; }
+        public string? ApiEndpoint { get; set; }
 
         /// <summary>
         /// Name of the http request header for authorizing with the api, for example: "Authorization".
         /// </summary>
-        public string ApiAuthHeaderName { get; set; }
+        public string? ApiAuthHeaderName { get; set; }
 
         /// <summary>
         /// Value of the http request header for authorizing with the api, for example: "Basic XXXXXXXX".
         /// </summary>
-        public string ApiAuthHeaderValue { get; set; }
+        public string? ApiAuthHeaderValue { get; set; }
 
         /// <summary>
         /// Delay in milliseconds after app start for sending the initial telemetry report.
@@ -55,7 +55,7 @@ namespace Infocaster.Telemetry.Umbraco.Configuration
         /// <summary>
         /// Guid that uniquely identifies the application.
         /// </summary>
-        public Guid AppId { get; set; }
+        public Guid? AppId { get; set; } = Guid.Empty;
 
         /// <summary>
         /// Preferred display name of the application in telemetry reports.

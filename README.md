@@ -3,7 +3,7 @@
 </h3>
 
 <h1 align="center">
-Infocaster.Telemetry.Umbraco
+Infocaster Telemetry Package
 
 [![Downloads](https://img.shields.io/nuget/dt/Infocaster.Telemetry.Umbraco?color=ff0069)](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/)
 [![Nuget](https://img.shields.io/nuget/vpre/Infocaster.Telemetry.Umbraco?color=ffc800)](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/)
@@ -32,11 +32,11 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Examine.ExternalIndexItemCount",
-            "Value": 258,
+            "Value": 8592,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.Examine.InternalIndexItemCount",
-            "Value": 274,
+            "Value": 9493,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.Examine.MembersIndexItemCount",
@@ -44,7 +44,7 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.Examine.LuceneDirectoryFactory",
-            "Value": "Default",
+            "Value": "Examine.LuceneEngine.Directories.SyncTempEnvDirectoryFactory, Examine",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Examine.ExamineVersion",
@@ -52,11 +52,11 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.String"
         }, {
             "Name": "Umbraco.ApplicationUrl",
-            "Value": "https://localhost:44330/",
+            "Value": "https://myawesomeumbracowebsite.com/umbraco",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.ApplicationUrlSetting",
-            "Value": null,
+            "Value": "https://myawesomeumbracowebsite.com/umbraco",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Content.LastUpdatedDate",
@@ -64,23 +64,27 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.DateTime"
         }, {
             "Name": "Umbraco.DebugMode",
-            "Value": true,
+            "Value": false,
             "Type": "System.Boolean"
         }, {
             "Name": "Umbraco.Domains.en-US",
             "Value": "myawesomeumbracowebsite.com",
             "Type": "System.String"
         }, {
+            "Name": "Umbraco.Domains.nl-NL",
+            "Value": "myawesomeumbracowebsite.nl",
+            "Type": "System.String"
+        }, {
             "Name": "Umbraco.Domains.Count",
-            "Value": 1,
+            "Value": 2,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.LocalTempPath",
-            "Value": "C:\\src\\telemetry-umbracoawesome-v10\\src\\Infocaster.Telemetry.Umbraco.Site\\umbraco\\Data\\TEMP",
+            "Value": "D:\local\Temp\UmbracoData\3cee2dd43eaf1d6130dfa7f7671f7721",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.LocalTempStorageLocation",
-            "Value": "Default",
+            "Value": "EnvironmentTemp",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Logs.Debug.Count",
@@ -112,7 +116,7 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.Boolean"
         }, {
             "Name": "Umbraco.MainDomLockSetting",
-            "Value": "",
+            "Value": "SqlMainDomLock",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.SessionTimeOutInMinutes",
@@ -148,10 +152,12 @@ The JSON structure below is an example of the data that is included in telemetry
 ```
 
 ## Requirements
-The package requires a web API to send telemetry to and a database to store telemetry in. The API and the database will need to be hosted and maintained by you. Feel free to use our source code for your API. The source code is available at https://github.com/Infocaster/Telemetry-Backend. The source code includes a Blazor app to visualize your data too!
+The package requires a web API to send telemetry to and a database to store telemetry in. The API and the database will need to be hosted and maintained by you. Feel free to use our example source code for your API. The source code is available at https://github.com/Infocaster/Telemetry-Backend. The source code includes a Blazor app to visualize your data too!
 
 ## Installation
-Install the Infocaster.Telemetry.Umbraco package in your website. The package is available via NuGet. Visit [the package on NuGet](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/) for more information about installing the package using NuGet.
+Make sure your web API is up and running first. See our example API source code at https://github.com/Infocaster/Telemetry-Backend for more information.
+
+Then install the Infocaster.Telemetry.Umbraco package in your website. The package is available via NuGet. Visit [the package on NuGet](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/) for more information about installing the package using NuGet.
 
 Umbraco version 7.6 and later are supported. Make sure to install the right package version for your website. See the table below for which package version is compatible with your website.
 
