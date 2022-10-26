@@ -1,5 +1,6 @@
 ﻿using Infocaster.Telemetry.Umbraco.Configuration;
 using Infocaster.Telemetry.Umbraco.Providers;
+using Infocaster.Telemetry.Umbraco.Reporters;
 using Infocaster.Telemetry.Umbraco.Reporting;
 using Umbraco.Core;
 using Umbraco.Core.Composing;
