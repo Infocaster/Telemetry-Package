@@ -13,7 +13,7 @@ using Umbraco.Cms.Infrastructure.HostedServices;
 namespace Infocaster.Telemetry.Umbraco.Reporting
 {
     /// <summary>
-    /// Recurring task that sends telemetry reports to the telemetry report api endpoint.
+    /// Recurring task that iterates all telemetry reporters and calls their ITelemetryReporter.ReportTelemetry method.
     /// </summary>
     public class TelemetryReportingTask : RecurringHostedServiceBase
     {
