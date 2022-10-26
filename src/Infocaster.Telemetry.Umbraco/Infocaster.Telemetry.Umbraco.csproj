@@ -38,53 +38,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Remove="**\*" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Compile Include="AppIdentifierProvider.cs" />
-		<Compile Include="AppTelemetry.cs" />
-		<Compile Include="AppTelemetryReport.cs" />
-		<Compile Include="Resolvers\TelemetryReporterResolver.cs" />
-		<Compile Include="Resolvers\TelemetryProviderResolver.cs" />
-		<Compile Include="Extensions\PluginManagerExtensions.cs" />
-		<Compile Include="Configuration\ConfigurationProvider.cs" />
-		<Compile Include="Configuration\ITelemetryReportingConfiguration.cs" />
-		<Compile Include="Configuration\TelemetryReportingConfiguration.cs" />
-		<Compile Include="IAppIdentifierProvider.cs" />
-		<Compile Include="IAppTelemetry.cs" />
-		<Compile Include="ITelemetryProvider.cs" />
-		<Compile Include="ITelemetryReportProvider.cs" />
-		<Compile Include="Providers\AzureWebsiteDisableOverlappedRecyclingProvider.cs" />
-		<Compile Include="Providers\ExamineVersionProvider.cs" />
-		<Compile Include="Providers\ExamineIndexItemCountProvider.cs" />
-		<Compile Include="Providers\ExamineLuceneDirectoryFactoryProvider.cs" />
-		<Compile Include="Providers\TargetFrameworkProvider.cs" />
-		<Compile Include="Providers\UmbracoApplicationUrlProvider.cs" />
-		<Compile Include="Providers\UmbracoContentLastUpdatedProvider.cs" />
-		<Compile Include="Providers\UmbracoDebugModeProvider.cs" />
-		<Compile Include="Providers\UmbracoDomainProvider.cs" />
-		<Compile Include="Providers\UmbracoLocalTempStorageProvider.cs" />
-		<Compile Include="Providers\UmbracoLogLevelProvider.cs" />
-		<Compile Include="Providers\UmbracoSessionTimeOutProvider.cs" />
-		<Compile Include="Providers\UmbracoUseHttpsProvider.cs" />
-		<Compile Include="Providers\UmbracoUserLastLoginDateProvider.cs" />
-		<Compile Include="Providers\UmbracoVersionCheckPeriodProvider.cs" />
-		<Compile Include="Providers\UmbracoVersionProvider.cs" />
-		<Compile Include="Reporters\ITelemetryReporter.cs" />
-		<Compile Include="Reporters\TelemetryReporter.cs" />
-		<Compile Include="Reporting\TelemetryReportingScheduler.cs" />
-		<Compile Include="Reporting\TelemetryReportingTask.cs" />
-		<Compile Include="Reporting\TelemetryReportProvider.cs" />
-		<Compile Include="Resolvers\ResolverInitializer.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="UmbracoCms.Core" Version="7.6.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Reference Include="System.Configuration" />
 		<Reference Include="System.Web" />
-	</ItemGroup>
+	</ItemGroup>	
 </Project>

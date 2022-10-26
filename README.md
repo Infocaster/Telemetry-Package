@@ -3,7 +3,7 @@
 </h3>
 
 <h1 align="center">
-Infocaster.Telemetry.Umbraco
+Infocaster Telemetry Package
 
 [![Downloads](https://img.shields.io/nuget/dt/Infocaster.Telemetry.Umbraco?color=ff0069)](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/)
 [![Nuget](https://img.shields.io/nuget/vpre/Infocaster.Telemetry.Umbraco?color=ffc800)](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/)
@@ -12,7 +12,7 @@ Infocaster.Telemetry.Umbraco
 
 *Awesome telemetry package for Umbraco by Infocaster. Do you want to keep track of your Umbraco websites? Then this package may be for you!*
 
-This package makes keeping track of your Umbraco websites easier! When installed your websites will periodically send telemetry reports to a centralized and external web API. The reports include data about your Umbraco website like which versions of Umbraco and Examine are installed, how many log messages were created, when your content was last updated and much, much more!
+This package makes keeping track of your Umbraco websites easier! When installed your websites will periodically send telemetry reports to a centralized and external web API. The reports include data about your Umbraco website like which versions of Umbraco and Examine are installed, when your content was last updated and much, much more!
 Centralizing your data allows you to easily spot which websites require attention and removes the need to check in on your websites manually.
 
 The data is sent to an API of your choosing. This ensures that you maintain full control over your data and that your data is never shared with other parties. See the section about requirements for more information about the API.
@@ -32,11 +32,11 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Examine.ExternalIndexItemCount",
-            "Value": 258,
+            "Value": 8592,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.Examine.InternalIndexItemCount",
-            "Value": 274,
+            "Value": 9493,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.Examine.MembersIndexItemCount",
@@ -47,32 +47,44 @@ The JSON structure below is an example of the data that is included in telemetry
             "Value": ".NETFramework,Version=v4.5",
             "Type": "System.String"
         }, {
+            "Name": "Umbraco.Examine.LuceneDirectoryFactory",
+            "Value": "Examine.LuceneEngine.Directories.SyncTempEnvDirectoryFactory, Examine",
+            "Type": "System.String"
+        }, {
+            "Name": "Umbraco.Examine.ExamineVersion",
+            "Value": "0.1.90.0",
+            "Type": "System.String"
+        }, {
             "Name": "Umbraco.ApplicationUrl",
-            "Value": "http://localhost/umbraco",
+            "Value": "https://myawesomeumbracowebsite.com/umbraco",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.ApplicationUrlSetting",
-            "Value": "",
+            "Value": "https://myawesomeumbracowebsite.com/umbraco",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Content.LastUpdatedDate",
-            "Value": "2022-10-17T16:33:01Z",
+            "Value": "2022-10-17T18:46:19.4817556Z",
             "Type": "System.DateTime"
         }, {
             "Name": "Umbraco.DebugMode",
-            "Value": true,
+            "Value": false,
             "Type": "System.Boolean"
         }, {
             "Name": "Umbraco.Domains.en-US",
             "Value": "myawesomeumbracowebsite.com",
             "Type": "System.String"
         }, {
+            "Name": "Umbraco.Domains.nl-NL",
+            "Value": "myawesomeumbracowebsite.nl",
+            "Type": "System.String"
+        }, {
             "Name": "Umbraco.Domains.Count",
-            "Value": 1,
+            "Value": 2,
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.LocalTempStorageLocation",
-            "Value": "Default",
+            "Value": "EnvironmentTemp",
             "Type": "System.String"
         }, {
             "Name": "Umbraco.Logs.LogLevel",
@@ -88,7 +100,11 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.Boolean"
         }, {
             "Name": "Umbraco.Users.LastLoginDate.Administrators",
-            "Value": "2022-10-19T09:51:33.373Z",
+            "Value": "2022-10-19T06:27:39.4534862Z",
+            "Type": "System.DateTime"
+        }, {
+            "Name": "Umbraco.Users.LastLoginDate.Sensitive data",
+            "Value": "2022-10-19T06:27:39.4534862Z",
             "Type": "System.DateTime"
         }, {
             "Name": "Umbraco.VersionCheckPeriod",
@@ -104,10 +120,12 @@ The JSON structure below is an example of the data that is included in telemetry
 ```
 
 ## Requirements
-The package requires a web API to send telemetry to and a database to store telemetry in. The API and the database will need to be hosted and maintained by you. Feel free to use our source code for your API. The source code is available at https://github.com/Infocaster/Telemetry-Backend. The source code includes a Blazor app to visualize your data too!
+The package requires a web API to send telemetry to and a database to store telemetry in. The API and the database will need to be hosted and maintained by you. Feel free to use our example source code for your API. The source code is available at https://github.com/Infocaster/Telemetry-Backend. The source code includes a Blazor app to visualize your data too!
 
 ## Installation
-Install the Infocaster.Telemetry.Umbraco package in your website. The package is available via NuGet. Visit [the package on NuGet](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/) for more information about installing the package using NuGet.
+Make sure your web API is up and running first. See our example API source code at https://github.com/Infocaster/Telemetry-Backend for more information.
+
+Then install the Infocaster.Telemetry.Umbraco package in your website. The package is available via NuGet. Visit [the package on NuGet](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/) for more information about installing the package using NuGet.
 
 Umbraco version 7.6 and later are supported. Make sure to install the right package version for your website. See the table below for which package version is compatible with your website.
 
@@ -158,6 +176,20 @@ public class MyTelemetryProvider : ITelemetryProvider
 }
 ```
 
+There is no full support for dependency injection, but injecting umbraco context into your telemetry provider is supported:
+
+```csharp
+public class MyTelemetryProvider : ITelemetryProvider
+{
+    private readonly UmbracoContext _umbracoContext;
+
+    public MyTelemetryProvider(UmbracoContext umbracoContext)
+    {
+        _umbracoContext = umbracoContext;
+    }
+}
+```
+
 You can override ApplicationEventHandler.ApplicationStarting to remove the default telemetry providers:
 
 ```csharp
@@ -178,6 +210,20 @@ public class MyTelemetryReporter : ITelemetryReporter
     public Task ReportTelemetry(AppTelemetryReport report, CancellationToken token)
     {
         // Send the report via HTTP request or SMTP or whichever way that suits your needs!
+    }
+}
+```
+
+There is no full support for dependency injection, but injecting umbraco context into your telemetry reporter is supported:
+
+```csharp
+public class MyTelemetryReporter : ITelemetryReporter
+{
+    private readonly UmbracoContext _umbracoContext;
+
+    public MyTelemetryReporter(UmbracoContext umbracoContext)
+    {
+        _umbracoContext = umbracoContext;
     }
 }
 ```
