@@ -3,7 +3,7 @@
 </h3>
 
 <h1 align="center">
-Infocaster.Telemetry.Umbraco
+Infocaster Telemetry Package
 
 [![Downloads](https://img.shields.io/nuget/dt/Infocaster.Telemetry.Umbraco?color=ff0069)](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/)
 [![Nuget](https://img.shields.io/nuget/vpre/Infocaster.Telemetry.Umbraco?color=ffc800)](https://www.nuget.org/packages/Infocaster.Telemetry.Umbraco/)
