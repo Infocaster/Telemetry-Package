@@ -140,7 +140,7 @@ The JSON structure below is an example of the data that is included in telemetry
             "Type": "System.Int32"
         }, {
             "Name": "Umbraco.UmbracoVersion",
-            "Value": "10.0.0",
+            "Value": "11.0.0",
             "Type": "System.String"
         }, {
             "Name": "System.TargetFramework",
@@ -168,6 +168,7 @@ Umbraco version 7.6 and later are supported. Make sure to install the right pack
 |             > 8 | > 8             |
 |             > 9 | > 9             |
 |            > 10 | > 10            |
+|            > 11 | > 11            |
 
 The packages requires configuration after installation. See the section about configuration for more information.
 

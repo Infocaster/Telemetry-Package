@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infocaster.Telemetry.Umbraco", "src\Infocaster.Telemetry.Umbraco\Infocaster.Telemetry.Umbraco.csproj", "{A071941F-BB7D-4648-B55B-1577C1FD90CC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infocaster.Telemetry.Umbraco.Site", "src\Infocaster.Telemetry.Umbraco.Site\Infocaster.Telemetry.Umbraco.Site.csproj", "{68D17C51-8DA3-4896-8064-BEDDC40B2EC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infocaster.Telemetry.Umbraco.Site", "src\Infocaster.Telemetry.Umbraco.Site\Infocaster.Telemetry.Umbraco.Site.csproj", "{42AECF07-6AA9-4908-8D2A-35E6A2D549D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution files", "Solution files", "{A1E9ED26-3C79-4CB0-8A9C-F26E65E906B0}"
 	ProjectSection(SolutionItems) = preProject
@@ -26,10 +26,10 @@ Global
 		{A071941F-BB7D-4648-B55B-1577C1FD90CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A071941F-BB7D-4648-B55B-1577C1FD90CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A071941F-BB7D-4648-B55B-1577C1FD90CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68D17C51-8DA3-4896-8064-BEDDC40B2EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68D17C51-8DA3-4896-8064-BEDDC40B2EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68D17C51-8DA3-4896-8064-BEDDC40B2EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68D17C51-8DA3-4896-8064-BEDDC40B2EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42AECF07-6AA9-4908-8D2A-35E6A2D549D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42AECF07-6AA9-4908-8D2A-35E6A2D549D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42AECF07-6AA9-4908-8D2A-35E6A2D549D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42AECF07-6AA9-4908-8D2A-35E6A2D549D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
