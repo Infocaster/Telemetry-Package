@@ -1,0 +1,29 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "Title": "Telemetry Package",
+  "AlternatePackageNames": [
+    "Infocaster Telemetry Package",
+    "Infocaster.Telemetry.Umbraco"
+  ],
+  "Category": "Analytics and Insights",
+  "PackageType": "Package",
+  "Tags": [
+    "telemetry",
+    "monitoring",
+    "reporting"
+  ],
+  "LicenseTypes": [ "Free" ],
+  "AuthorDetails": {
+    "Url": "https://infocaster.net",
+    "ImageUrl": "https://github.com/InfocasterTechniek.png",
+    "Description": "Let's make the internet brighter",
+    "Contributors": [
+      "Dennis Heutinck",
+      "Erik Eelman",
+      "Fabian Hofman",
+      "Joris Peters",
+      "Bram van den Bogaard"
+    ]
+  },
+  "IssueTrackerUrl": "https://github.com/Infocaster/Telemetry-Package/issues"
+}

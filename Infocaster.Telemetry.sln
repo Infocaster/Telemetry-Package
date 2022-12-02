@@ -11,9 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution files", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		azure-pipelines.yml = azure-pipelines.yml
 		docs\backoffice credentials.txt = docs\backoffice credentials.txt
-		README-NUGET.md = README-NUGET.md
 		docs\CONTRIBUTING.md = docs\CONTRIBUTING.md
+		README-NUGET.md = README-NUGET.md
 		README.md = README.md
+		umbraco-marketplace.json = umbraco-marketplace.json
 	EndProjectSection
 EndProject
 Global
