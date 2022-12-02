@@ -8,7 +8,7 @@
 		<Authors>Infocaster B.V.</Authors>
 		<Product>Infocaster.Telemetry.Umbraco</Product>
 		<Description>Awesome telemetry package for Umbraco by Infocaster.</Description>
-		<PackageTags>umbraco plugin package infocaster telemetry</PackageTags>
+		<PackageTags>umbraco plugin package infocaster telemetry monitoring reporting umbraco-marketplace</PackageTags>
 		<Copyright>Copyright © Infocaster 2022</Copyright>
 		<RepositoryUrl>https://github.com/Infocaster/Telemetry-Package</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/Infocaster/Telemetry-Package</PackageProjectUrl>
