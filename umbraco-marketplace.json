@@ -5,7 +5,7 @@
     "Infocaster Telemetry Package",
     "Infocaster.Telemetry.Umbraco"
   ],
-  "Category": "Analytics and Insights",
+  "Category": "Analytics & Insights",
   "PackageType": "Package",
   "Tags": [
     "telemetry",
