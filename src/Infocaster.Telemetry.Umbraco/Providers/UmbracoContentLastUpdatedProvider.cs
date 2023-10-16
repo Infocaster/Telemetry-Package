@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Umbraco.Cms.Core.Web;
+using Umbraco.Extensions;
 
 namespace Infocaster.Telemetry.Umbraco.Providers
 {
@@ -17,7 +18,7 @@ namespace Infocaster.Telemetry.Umbraco.Providers
         public IEnumerable<IAppTelemetry> GetTelemetry()
         {
             var dt = GetContentLastUpdatedDate();
-            if (dt == null) yield break;
+            if (dt is null) yield break;
             yield return new AppTelemetry<DateTime>($"Umbraco.Content.LastUpdatedDate", dt.Value.ToUniversalTime());
         }
 
@@ -27,10 +28,9 @@ namespace Infocaster.Telemetry.Umbraco.Providers
         private DateTime? GetContentLastUpdatedDate()
         {
             using var context = _umbracoContextFactory.EnsureUmbracoContext();
-            var content = context.UmbracoContext.Content?.GetByXPath("//*[@updateDate]");
-            var lastUpdatedContent = content?.OrderByDescending(x => x.UpdateDate).FirstOrDefault();
-            if (lastUpdatedContent?.UpdateDate == null) return null;
-            var local = DateTime.SpecifyKind(lastUpdatedContent.UpdateDate, DateTimeKind.Local);
+            var lastUpdatedDate = context.UmbracoContext.Content?.GetAtRoot().SelectMany(x => x.Descendants()).Max(x => x.UpdateDate);
+            if (lastUpdatedDate is null) return null;
+            var local = DateTime.SpecifyKind(lastUpdatedDate.Value, DateTimeKind.Local);
             return local;
         }
     }
